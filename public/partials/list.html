@@ -1,0 +1,19 @@
+<div class="page-header">
+	<h1>Player List</h1>
+</div>
+<div class="row">
+</div>
+<div class="row">
+	<div class="col-xs-12"><hr></div>
+</div>
+<div class="row" ng-switch on="players.length">
+	<ul ng-switch-when="0">
+		<li>No players in databases.</li>
+	</ul>
+	<ul ng-switch-default>
+		<li ng-repeat="player in players ">
+			{{player.name}}
+		</li>
+	</ul>
+</div>
+<p>&nbsp;</p>
